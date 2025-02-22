@@ -31,7 +31,7 @@ function App() {
     addMessage("user", userInput);
 
     try {
-      const response = await axios.post('/api/mediator', {
+      const response = await axios.post('/api/mediator.js', {
         conversation,
         userMessage: userInput,
         numParties: selectedNumParties
